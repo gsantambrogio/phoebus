@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>490</width>
+  <actions>
+  </actions>
+  <rules>
+    <rule name="New Rule" prop_id="name" out_exp="false">
+      <exp bool_exp="$(PressureGauge:switch)">
+        <value>Display</value>
+      </exp>
+      <pv_name>$(PressureGauge:switch)</pv_name>
+    </rule>
+  </rules>
+  <grid_color>
+    <color name="MAJOR" red="255" green="0" blue="0">
+    </color>
+  </grid_color>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>12</x>
+    <y>107</y>
+    <width>325</width>
+    <height>83</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_1</name>
+    <pv_name>pirani:PRESSURE</pv_name>
+    <x>121</x>
+    <y>20</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>2</format>
+    <precision>4</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_1</name>
+    <text>Pirani</text>
+    <x>9</x>
+    <y>20</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_2</name>
+    <text>Cold Cathode</text>
+    <x>9</x>
+    <y>45</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_2</name>
+    <pv_name>CC1:PRESSURE</pv_name>
+    <x>121</x>
+    <y>45</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>2</format>
+    <precision>4</precision>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button</name>
+    <pv_name>PressureGauge:switch</pv_name>
+    <x>301</x>
+    <y>41</y>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(PressureGauge:switch)</pv_name>
+        <value>OFF</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_1</name>
+    <pv_name>ACP:switch</pv_name>
+    <x>398</x>
+    <y>109</y>
+    <width>75</width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>12</x>
+    <y>78</y>
+    <width>469</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="469.6559066593787" y="1.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_3</name>
+    <text>Scroll</text>
+    <x>350</x>
+    <y>116</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_4</name>
+    <pv_name>Turbo:station</pv_name>
+    <x>73</x>
+    <y>115</y>
+    <width>76</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_5</name>
+    <text>Turbo</text>
+    <x>25</x>
+    <y>120</y>
+    <width>54</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_6</name>
+    <text>Vent</text>
+    <x>25</x>
+    <y>155</y>
+    <width>54</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_3</name>
+    <pv_name>Turbo:rotspeed</pv_name>
+    <x>190</x>
+    <y>155</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>0</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_8</name>
+    <text>Hz</text>
+    <x>165</x>
+    <y>155</y>
+    <width>24</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_5</name>
+    <pv_name>Turbo:venting</pv_name>
+    <x>73</x>
+    <y>150</y>
+    <width>76</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_9</name>
+    <text>Valve</text>
+    <x>350</x>
+    <y>159</y>
+    <width>48</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_7</name>
+    <pv_name>Valve1</pv_name>
+    <x>398</x>
+    <y>155</y>
+    <width>75</width>
+    <off_label>Closed</off_label>
+    <on_label>Open</on_label>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>12</x>
+    <y>293</y>
+    <width>460</width>
+    <height>110</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_10</name>
+    <text>Temperature K</text>
+    <x>25</x>
+    <y>297</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_4</name>
+    <pv_name>CTC:Temp1</pv_name>
+    <x>49</x>
+    <y>317</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_5</name>
+    <pv_name>CTC:Temp2</pv_name>
+    <x>49</x>
+    <y>341</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_6</name>
+    <pv_name>CTC:Temp3</pv_name>
+    <x>49</x>
+    <y>365</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_11</name>
+    <text>1</text>
+    <x>24</x>
+    <y>319</y>
+    <width>10</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_12</name>
+    <text>2</text>
+    <x>24</x>
+    <y>343</y>
+    <width>10</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_13</name>
+    <text>3</text>
+    <x>24</x>
+    <y>367</y>
+    <width>10</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <x>12</x>
+    <y>413</y>
+    <width>460</width>
+    <height>180</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_14</name>
+    <text>Cryo</text>
+    <x>23</x>
+    <y>417</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_15</name>
+    <class>SECTION</class>
+    <text>Water in</text>
+    <x>23</x>
+    <y>463</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_16</name>
+    <class>SECTION</class>
+    <text>Water out</text>
+    <x>23</x>
+    <y>483</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_17</name>
+    <class>SECTION</class>
+    <text>Oil</text>
+    <x>23</x>
+    <y>503</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_18</name>
+    <class>SECTION</class>
+    <text>Helium</text>
+    <x>23</x>
+    <y>523</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_19</name>
+    <class>SECTION</class>
+    <text>Low press</text>
+    <x>242</x>
+    <y>463</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_20</name>
+    <class>SECTION</class>
+    <text>(Avg)</text>
+    <x>242</x>
+    <y>483</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_21</name>
+    <class>SECTION</class>
+    <text>High press</text>
+    <x>242</x>
+    <y>503</y>
+    <width>116</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_22</name>
+    <class>SECTION</class>
+    <text>(Avg)</text>
+    <x>242</x>
+    <y>523</y>
+    <width>116</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_23</name>
+    <class>SECTION</class>
+    <text>Hours</text>
+    <x>23</x>
+    <y>543</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_7</name>
+    <pv_name>cryo:waterIn</pv_name>
+    <x>101</x>
+    <y>463</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_8</name>
+    <pv_name>cryo:waterOut</pv_name>
+    <x>101</x>
+    <y>483</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_9</name>
+    <pv_name>cryo:oil</pv_name>
+    <x>101</x>
+    <y>503</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_10</name>
+    <pv_name>cryo:helium</pv_name>
+    <x>101</x>
+    <y>523</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_11</name>
+    <pv_name>cryo:lowPressure</pv_name>
+    <x>320</x>
+    <y>463</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_12</name>
+    <pv_name>cryo:lowPressureAvg</pv_name>
+    <x>320</x>
+    <y>483</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_13</name>
+    <pv_name>cryo:highPressure</pv_name>
+    <x>320</x>
+    <y>503</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_14</name>
+    <pv_name>cryo:highPressureAvg</pv_name>
+    <x>320</x>
+    <y>523</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_15</name>
+    <pv_name>cryo:hours</pv_name>
+    <x>101</x>
+    <y>543</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_24</name>
+    <class>SECTION</class>
+    <text>Warnings</text>
+    <x>23</x>
+    <y>563</y>
+    <width>81</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_16</name>
+    <pv_name>cryo:warnings</pv_name>
+    <x>101</x>
+    <y>563</y>
+    <width>338</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_8</name>
+    <pv_name>cryo:switch</pv_name>
+    <x>306</x>
+    <y>423</y>
+    <off_label>OFF</off_label>
+    <on_label>ON</on_label>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_25</name>
+    <text>A</text>
+    <x>165</x>
+    <y>120</y>
+    <width>24</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_17</name>
+    <pv_name>Turbo:current</pv_name>
+    <x>190</x>
+    <y>120</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>0</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_26</name>
+    <text>tot hours</text>
+    <x>263</x>
+    <y>120</y>
+    <width>58</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_18</name>
+    <pv_name>Turbo:hours</pv_name>
+    <x>258</x>
+    <y>138</y>
+    <width>63</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>0</precision>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_4</name>
+    <x>12</x>
+    <y>195</y>
+    <width>460</width>
+    <height>90</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_19</name>
+    <pv_name>flowmeter:A:AbsPressure</pv_name>
+    <x>39</x>
+    <y>220</y>
+    <width>55</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <precision>0</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_27</name>
+    <text>mbar</text>
+    <x>49</x>
+    <y>200</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_20</name>
+    <pv_name>flowmeter:A:Temperature</pv_name>
+    <x>110</x>
+    <y>220</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_28</name>
+    <text>Temp C</text>
+    <x>120</x>
+    <y>200</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_21</name>
+    <pv_name>flowmeter:A:VolFlow</pv_name>
+    <x>185</x>
+    <y>220</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_29</name>
+    <text>VolFlow</text>
+    <x>192</x>
+    <y>200</y>
+    <width>67</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_22</name>
+    <pv_name>flowmeter:A:SCCM</pv_name>
+    <x>260</x>
+    <y>220</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_30</name>
+    <text>SCCM</text>
+    <x>269</x>
+    <y>200</y>
+    <width>67</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_31</name>
+    <text>Set SCCM</text>
+    <x>335</x>
+    <y>200</y>
+    <width>67</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_32</name>
+    <text>A</text>
+    <x>21</x>
+    <y>222</y>
+    <width>10</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_24</name>
+    <pv_name>flowmeter:A:Gas</pv_name>
+    <x>408</x>
+    <y>220</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_33</name>
+    <text>Gas</text>
+    <x>422</x>
+    <y>200</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_4</name>
+    <pv_name>flowmeter:A:SetPtSCCM</pv_name>
+    <x>336</x>
+    <y>220</y>
+    <width>60</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="checkbox" version="2.0.0">
+    <name>Check Box</name>
+    <pv_name>CC1:notify</pv_name>
+    <label>Alarm</label>
+    <x>408</x>
+    <y>46</y>
+    <width>69</width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_5</name>
+    <x>142</x>
+    <y>313</y>
+    <width>60</width>
+    <height>78</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_34</name>
+    <text>Low</text>
+    <x>158</x>
+    <y>297</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_35</name>
+    <text>High</text>
+    <x>225</x>
+    <y>297</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_6</name>
+    <x>209</x>
+    <y>313</y>
+    <width>60</width>
+    <height>78</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_5</name>
+    <pv_name>CTC:Temp1:LowerLim</pv_name>
+    <x>147</x>
+    <y>317</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_7</name>
+    <pv_name>CTC:Temp2:LowerLim</pv_name>
+    <x>147</x>
+    <y>341</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_8</name>
+    <pv_name>CTC:Temp3:LowerLim</pv_name>
+    <x>148</x>
+    <y>365</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_9</name>
+    <pv_name>CTC:Temp3:UpperLim</pv_name>
+    <x>214</x>
+    <y>365</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_10</name>
+    <pv_name>CTC:Temp2:UpperLim</pv_name>
+    <x>214</x>
+    <y>341</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_11</name>
+    <pv_name>CTC:Temp1:UpperLim</pv_name>
+    <x>214</x>
+    <y>317</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+</display>

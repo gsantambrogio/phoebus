@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>550</width>
+  <height>200</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Toptica scan:offset</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner</name>
+    <pv_name>DLCpro:set:offset</pv_name>
+    <x>30</x>
+    <y>171</y>
+    <width>190</width>
+    <precision>3</precision>
+    <increment>0.1</increment>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>Scaled Slider</name>
+    <pv_name>DLCpro:set:offset</pv_name>
+    <x>10</x>
+    <y>50</y>
+    <width>530</width>
+    <major_tick_step_hint>10</major_tick_step_hint>
+    <scale_format>#.###</scale_format>
+    <level_hihi>70.0</level_hihi>
+    <level_high>70.0</level_high>
+    <level_low>57.0</level_low>
+    <level_lolo>50.0</level_lolo>
+    <show_hihi>false</show_hihi>
+    <show_high>false</show_high>
+    <show_low>false</show_low>
+    <show_lolo>false</show_lolo>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <increment>0.001</increment>
+    <minimum>50.0</minimum>
+    <maximum>70.0</maximum>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner_1</name>
+    <pv_name>DLCpro:set:offset</pv_name>
+    <x>30</x>
+    <y>105</y>
+    <width>190</width>
+    <precision>3</precision>
+    <increment>0.001</increment>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner_2</name>
+    <pv_name>DLCpro:set:offset</pv_name>
+    <x>30</x>
+    <y>138</y>
+    <width>190</width>
+    <precision>3</precision>
+    <increment>0.01</increment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>m</text>
+    <x>226</x>
+    <y>107</y>
+    <width>30</width>
+    <height>18</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>c</text>
+    <x>226</x>
+    <y>138</y>
+    <width>30</width>
+    <height>18</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>d</text>
+    <x>226</x>
+    <y>172</y>
+    <width>30</width>
+    <height>18</height>
+  </widget>
+</display>

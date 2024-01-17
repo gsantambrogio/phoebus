@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>270</width>
+  <height>350</height>
+  <grid_color>
+    <color name="MAJOR" red="255" green="0" blue="0">
+    </color>
+  </grid_color>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Temperatures Lab 10</text>
+    <width>270</width>
+    <height>31</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="thermometer" version="2.0.0">
+    <name>Thermometer</name>
+    <pv_name>temperature:water</pv_name>
+    <x>30</x>
+    <y>108</y>
+    <width>60</width>
+    <height>220</height>
+    <rules>
+      <rule name="New Rule" prop_id="fill_color" out_exp="false">
+        <exp bool_exp="pv0&gt;=18">
+          <value>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>temperature:water</pv_name>
+      </rule>
+    </rules>
+    <minimum>10.0</minimum>
+    <maximum>45.0</maximum>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Temp</name>
+    <pv_name>temperature:water</pv_name>
+    <x>30</x>
+    <y>70</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label</name>
+    <text>Water</text>
+    <x>30</x>
+    <y>50</y>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Temp_1</name>
+    <pv_name>temperature:table</pv_name>
+    <x>120</x>
+    <y>170</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Temp_2</name>
+    <pv_name>temperature:lab</pv_name>
+    <x>120</x>
+    <y>290</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_1</name>
+    <text>Laser table</text>
+    <x>130</x>
+    <y>150</y>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_2</name>
+    <text>Lab</text>
+    <x>130</x>
+    <y>270</y>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>alarm:temperature:water</pv_name>
+    <x>200</x>
+    <y>60</y>
+    <on_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </on_color>
+  </widget>
+</display>
