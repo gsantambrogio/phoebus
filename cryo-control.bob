@@ -2,6 +2,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <width>490</width>
+  <height>620</height>
   <actions>
   </actions>
   <rules>
@@ -202,9 +203,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_2</name>
     <x>12</x>
-    <y>293</y>
+    <y>291</y>
     <width>460</width>
-    <height>110</height>
+    <height>130</height>
     <background_color>
       <color red="204" green="204" blue="204">
       </color>
@@ -214,7 +215,7 @@
     <name>temp label_10</name>
     <text>Temperature K</text>
     <x>25</x>
-    <y>297</y>
+    <y>295</y>
     <width>130</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="16.0">
@@ -225,7 +226,7 @@
     <name>Pressure_4</name>
     <pv_name>CTC:Temp1</pv_name>
     <x>49</x>
-    <y>317</y>
+    <y>315</y>
     <width>80</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -238,7 +239,7 @@
     <name>Pressure_5</name>
     <pv_name>CTC:Temp2</pv_name>
     <x>49</x>
-    <y>341</y>
+    <y>339</y>
     <width>80</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -251,7 +252,7 @@
     <name>Pressure_6</name>
     <pv_name>CTC:Temp3</pv_name>
     <x>49</x>
-    <y>365</y>
+    <y>363</y>
     <width>80</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -264,7 +265,7 @@
     <name>temp label_11</name>
     <text>1</text>
     <x>24</x>
-    <y>319</y>
+    <y>317</y>
     <width>10</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="16.0">
@@ -275,7 +276,7 @@
     <name>temp label_12</name>
     <text>2</text>
     <x>24</x>
-    <y>343</y>
+    <y>341</y>
     <width>10</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="16.0">
@@ -286,7 +287,7 @@
     <name>temp label_13</name>
     <text>3</text>
     <x>24</x>
-    <y>367</y>
+    <y>364</y>
     <width>10</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="16.0">
@@ -296,7 +297,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_3</name>
     <x>12</x>
-    <y>413</y>
+    <y>428</y>
     <width>460</width>
     <height>180</height>
     <background_color>
@@ -308,7 +309,7 @@
     <name>temp label_14</name>
     <text>Cryo</text>
     <x>23</x>
-    <y>417</y>
+    <y>432</y>
     <width>130</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="16.0">
@@ -320,7 +321,7 @@
     <class>SECTION</class>
     <text>Water in</text>
     <x>23</x>
-    <y>463</y>
+    <y>478</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -332,7 +333,7 @@
     <class>SECTION</class>
     <text>Water out</text>
     <x>23</x>
-    <y>483</y>
+    <y>498</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -344,7 +345,7 @@
     <class>SECTION</class>
     <text>Oil</text>
     <x>23</x>
-    <y>503</y>
+    <y>518</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -356,7 +357,7 @@
     <class>SECTION</class>
     <text>Helium</text>
     <x>23</x>
-    <y>523</y>
+    <y>538</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -368,7 +369,7 @@
     <class>SECTION</class>
     <text>Low press</text>
     <x>242</x>
-    <y>463</y>
+    <y>478</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -380,7 +381,7 @@
     <class>SECTION</class>
     <text>(Avg)</text>
     <x>242</x>
-    <y>483</y>
+    <y>498</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -392,7 +393,7 @@
     <class>SECTION</class>
     <text>High press</text>
     <x>242</x>
-    <y>503</y>
+    <y>518</y>
     <width>116</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -404,7 +405,7 @@
     <class>SECTION</class>
     <text>(Avg)</text>
     <x>242</x>
-    <y>523</y>
+    <y>538</y>
     <width>116</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -416,7 +417,7 @@
     <class>SECTION</class>
     <text>Hours</text>
     <x>23</x>
-    <y>543</y>
+    <y>558</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -427,7 +428,7 @@
     <name>Pressure_7</name>
     <pv_name>cryo:waterIn</pv_name>
     <x>101</x>
-    <y>463</y>
+    <y>478</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -440,7 +441,7 @@
     <name>Pressure_8</name>
     <pv_name>cryo:waterOut</pv_name>
     <x>101</x>
-    <y>483</y>
+    <y>498</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -453,7 +454,7 @@
     <name>Pressure_9</name>
     <pv_name>cryo:oil</pv_name>
     <x>101</x>
-    <y>503</y>
+    <y>518</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -466,7 +467,7 @@
     <name>Pressure_10</name>
     <pv_name>cryo:helium</pv_name>
     <x>101</x>
-    <y>523</y>
+    <y>538</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -479,7 +480,7 @@
     <name>Pressure_11</name>
     <pv_name>cryo:lowPressure</pv_name>
     <x>320</x>
-    <y>463</y>
+    <y>478</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -492,7 +493,7 @@
     <name>Pressure_12</name>
     <pv_name>cryo:lowPressureAvg</pv_name>
     <x>320</x>
-    <y>483</y>
+    <y>498</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -505,7 +506,7 @@
     <name>Pressure_13</name>
     <pv_name>cryo:highPressure</pv_name>
     <x>320</x>
-    <y>503</y>
+    <y>518</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -518,7 +519,7 @@
     <name>Pressure_14</name>
     <pv_name>cryo:highPressureAvg</pv_name>
     <x>320</x>
-    <y>523</y>
+    <y>538</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -531,7 +532,7 @@
     <name>Pressure_15</name>
     <pv_name>cryo:hours</pv_name>
     <x>101</x>
-    <y>543</y>
+    <y>558</y>
     <width>119</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -545,7 +546,7 @@
     <class>SECTION</class>
     <text>Warnings</text>
     <x>23</x>
-    <y>563</y>
+    <y>578</y>
     <width>81</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -556,7 +557,7 @@
     <name>Pressure_16</name>
     <pv_name>cryo:warnings</pv_name>
     <x>101</x>
-    <y>563</y>
+    <y>578</y>
     <width>338</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="18.0">
@@ -569,7 +570,7 @@
     <name>Boolean Button_8</name>
     <pv_name>cryo:switch</pv_name>
     <x>306</x>
-    <y>423</y>
+    <y>438</y>
     <off_label>OFF</off_label>
     <on_label>ON</on_label>
   </widget>
@@ -799,9 +800,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
     <x>142</x>
-    <y>313</y>
+    <y>311</y>
     <width>60</width>
-    <height>78</height>
+    <height>100</height>
     <line_width>1</line_width>
     <line_color>
       <color name="ActiveText" red="255" green="255" blue="0">
@@ -816,7 +817,7 @@
     <name>temp label_34</name>
     <text>Low</text>
     <x>158</x>
-    <y>297</y>
+    <y>295</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -828,7 +829,7 @@
     <name>temp label_35</name>
     <text>High</text>
     <x>225</x>
-    <y>297</y>
+    <y>295</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -839,9 +840,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_6</name>
     <x>209</x>
-    <y>313</y>
+    <y>311</y>
     <width>60</width>
-    <height>78</height>
+    <height>100</height>
     <line_width>1</line_width>
     <line_color>
       <color name="ActiveText" red="255" green="255" blue="0">
@@ -856,7 +857,7 @@
     <name>Text Entry_5</name>
     <pv_name>CTC:Temp1:LowerLim</pv_name>
     <x>147</x>
-    <y>317</y>
+    <y>315</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
@@ -864,7 +865,7 @@
     <name>Text Entry_7</name>
     <pv_name>CTC:Temp2:LowerLim</pv_name>
     <x>147</x>
-    <y>341</y>
+    <y>339</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
@@ -872,7 +873,7 @@
     <name>Text Entry_8</name>
     <pv_name>CTC:Temp3:LowerLim</pv_name>
     <x>148</x>
-    <y>365</y>
+    <y>363</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
@@ -880,7 +881,7 @@
     <name>Text Entry_9</name>
     <pv_name>CTC:Temp3:UpperLim</pv_name>
     <x>214</x>
-    <y>365</y>
+    <y>363</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
@@ -888,7 +889,7 @@
     <name>Text Entry_10</name>
     <pv_name>CTC:Temp2:UpperLim</pv_name>
     <x>214</x>
-    <y>341</y>
+    <y>339</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
@@ -896,7 +897,47 @@
     <name>Text Entry_11</name>
     <pv_name>CTC:Temp1:UpperLim</pv_name>
     <x>214</x>
-    <y>317</y>
+    <y>315</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_36</name>
+    <text>4</text>
+    <x>24</x>
+    <y>387</y>
+    <width>10</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_23</name>
+    <pv_name>CTC:Temp4</pv_name>
+    <x>49</x>
+    <y>387</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_12</name>
+    <pv_name>CTC:Temp4:LowerLim</pv_name>
+    <x>148</x>
+    <y>387</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_13</name>
+    <pv_name>CTC:Temp4:UpperLim</pv_name>
+    <x>214</x>
+    <y>387</y>
     <width>50</width>
     <precision>2</precision>
   </widget>
