@@ -1024,4 +1024,79 @@
     <format>1</format>
     <precision>3</precision>
   </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_38</name>
+    <text>PID 1</text>
+    <x>320</x>
+    <y>283</y>
+    <width>51</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_39</name>
+    <text>input</text>
+    <x>276</x>
+    <y>305</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_30</name>
+    <pv_name>CTC:PID1:inputCh</pv_name>
+    <x>312</x>
+    <y>303</y>
+    <width>65</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_40</name>
+    <text>SetP</text>
+    <x>276</x>
+    <y>329</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_31</name>
+    <pv_name>CTC:PID1:setpoint</pv_name>
+    <x>312</x>
+    <y>327</y>
+    <width>65</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_9</name>
+    <pv_name>CTC:OutputEnable</pv_name>
+    <x>339</x>
+    <y>371</y>
+    <width>84</width>
+    <height>20</height>
+    <off_label>OFF</off_label>
+    <on_label>ON</on_label>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
 </display>
