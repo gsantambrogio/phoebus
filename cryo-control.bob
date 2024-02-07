@@ -1072,19 +1072,6 @@
       </font>
     </font>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Pressure_31</name>
-    <pv_name>CTC:PID1:setpoint</pv_name>
-    <x>312</x>
-    <y>327</y>
-    <width>65</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="18.0">
-      </font>
-    </font>
-    <format>1</format>
-    <precision>3</precision>
-  </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_9</name>
     <pv_name>CTC:OutputEnable</pv_name>
@@ -1098,5 +1085,13 @@
       <font family="Liberation Sans" style="REGULAR" size="12.0">
       </font>
     </font>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_15</name>
+    <pv_name>CTC:PID1:setpoint</pv_name>
+    <x>312</x>
+    <y>327</y>
+    <width>65</width>
+    <precision>2</precision>
   </widget>
 </display>
