@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-02-22 12:49:12 by ambrogio-->
 <display version="2.0.0">
   <name>Display</name>
   <width>480</width>
@@ -81,11 +82,6 @@
     <x>301</x>
     <y>41</y>
     <actions>
-      <action type="write_pv">
-        <pv_name>$(PressureGauge:switch)</pv_name>
-        <value>OFF</value>
-        <description>Write PV</description>
-      </action>
     </actions>
   </widget>
   <widget type="bool_button" version="2.0.0">
@@ -322,10 +318,15 @@
     <x>23</x>
     <y>466</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_16</name>
@@ -334,10 +335,15 @@
     <x>23</x>
     <y>486</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_17</name>
@@ -346,10 +352,15 @@
     <x>23</x>
     <y>506</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_18</name>
@@ -358,10 +369,15 @@
     <x>23</x>
     <y>526</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_19</name>
@@ -370,10 +386,15 @@
     <x>242</x>
     <y>466</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_20</name>
@@ -382,10 +403,15 @@
     <x>242</x>
     <y>486</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_21</name>
@@ -394,10 +420,15 @@
     <x>242</x>
     <y>506</y>
     <width>116</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_22</name>
@@ -406,10 +437,15 @@
     <x>242</x>
     <y>526</y>
     <width>116</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_23</name>
@@ -418,10 +454,15 @@
     <x>23</x>
     <y>546</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Pressure_7</name>
@@ -547,10 +588,15 @@
     <x>23</x>
     <y>566</y>
     <width>81</width>
-    <font>
+    <font use_class="true">
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Pressure_16</name>
