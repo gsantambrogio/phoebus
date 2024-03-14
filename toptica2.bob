@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-14 13:22:08 by ambrogio-->
 <display version="2.0.0">
   <name>Display</name>
   <width>550</width>
-  <height>200</height>
+  <height>400</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -99,5 +100,73 @@
     <y>172</y>
     <width>30</width>
     <height>18</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <y>211</y>
+    <width>550</width>
+    <height>179</height>
+    <background_color>
+      <color red="230" green="230" blue="230">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>CH1</text>
+    <x>10</x>
+    <y>220</y>
+    <width>45</width>
+    <height>25</height>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>AFG3052C:AO0:FMOD</pv_name>
+    <x>10</x>
+    <y>245</y>
+    <width>110</width>
+    <height>20</height>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_1</name>
+    <pv_name>AFG3052C:AO0:FUSHP</pv_name>
+    <x>10</x>
+    <y>270</y>
+    <width>110</width>
+    <height>20</height>
+  </widget>
+  <widget type="thumbwheel" version="2.0.0">
+    <name>Thumbwheel</name>
+    <pv_name>AFG3052C:AO0:FFIX</pv_name>
+    <x>10</x>
+    <y>295</y>
+    <width>140</width>
+    <height>50</height>
+    <decimal_digits>0</decimal_digits>
+    <integer_digits>8</integer_digits>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>AFG3052C:AO0:VOAM</pv_name>
+    <x>10</x>
+    <y>350</y>
+    <width>65</width>
+    <precision>3</precision>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_2</name>
+    <pv_name>AFG3052C:AO0:VOUN</pv_name>
+    <x>79</x>
+    <y>350</y>
+    <width>71</width>
+    <height>20</height>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>AFG3052C:AO0:IMPD</pv_name>
+    <x>55</x>
+    <y>220</y>
+    <width>65</width>
+    <precision>0</precision>
   </widget>
 </display>
