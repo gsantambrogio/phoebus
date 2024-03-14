@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-14 13:22:08 by ambrogio-->
+<!--Saved on 2024-03-14 13:27:52 by ambrogio-->
 <display version="2.0.0">
   <name>Display</name>
   <width>550</width>
-  <height>400</height>
+  <height>340</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <class>TITLE</class>
     <text>Toptica scan:offset</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
-    <width>550</width>
+    <x>14</x>
+    <y>16</y>
+    <width>230</width>
     <height>31</height>
-    <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <transparent use_class="true">true</transparent>
-  </widget>
-  <widget type="spinner" version="2.0.0">
-    <name>Spinner</name>
-    <pv_name>DLCpro:set:offset</pv_name>
-    <x>30</x>
-    <y>171</y>
-    <width>190</width>
-    <precision>3</precision>
-    <increment>0.1</increment>
   </widget>
   <widget type="scaledslider" version="2.0.0">
     <name>Scaled Slider</name>
@@ -59,53 +44,11 @@
     <maximum>70.0</maximum>
     <limits_from_pv>false</limits_from_pv>
   </widget>
-  <widget type="spinner" version="2.0.0">
-    <name>Spinner_1</name>
-    <pv_name>DLCpro:set:offset</pv_name>
-    <x>30</x>
-    <y>105</y>
-    <width>190</width>
-    <precision>3</precision>
-    <increment>0.001</increment>
-  </widget>
-  <widget type="spinner" version="2.0.0">
-    <name>Spinner_2</name>
-    <pv_name>DLCpro:set:offset</pv_name>
-    <x>30</x>
-    <y>138</y>
-    <width>190</width>
-    <precision>3</precision>
-    <increment>0.01</increment>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_1</name>
-    <text>m</text>
-    <x>226</x>
-    <y>107</y>
-    <width>30</width>
-    <height>18</height>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_3</name>
-    <text>c</text>
-    <x>226</x>
-    <y>138</y>
-    <width>30</width>
-    <height>18</height>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_4</name>
-    <text>d</text>
-    <x>226</x>
-    <y>172</y>
-    <width>30</width>
-    <height>18</height>
-  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_1</name>
-    <y>211</y>
+    <y>140</y>
     <width>550</width>
-    <height>179</height>
+    <height>195</height>
     <background_color>
       <color red="230" green="230" blue="230">
       </color>
@@ -115,15 +58,19 @@
     <name>Label_2</name>
     <text>CH1</text>
     <x>10</x>
-    <y>220</y>
+    <y>175</y>
     <width>45</width>
     <height>25</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
   </widget>
   <widget type="combo" version="2.0.0">
     <name>Combo Box</name>
     <pv_name>AFG3052C:AO0:FMOD</pv_name>
     <x>10</x>
-    <y>245</y>
+    <y>200</y>
     <width>110</width>
     <height>20</height>
   </widget>
@@ -131,7 +78,7 @@
     <name>Combo Box_1</name>
     <pv_name>AFG3052C:AO0:FUSHP</pv_name>
     <x>10</x>
-    <y>270</y>
+    <y>225</y>
     <width>110</width>
     <height>20</height>
   </widget>
@@ -139,7 +86,7 @@
     <name>Thumbwheel</name>
     <pv_name>AFG3052C:AO0:FFIX</pv_name>
     <x>10</x>
-    <y>295</y>
+    <y>250</y>
     <width>140</width>
     <height>50</height>
     <decimal_digits>0</decimal_digits>
@@ -149,7 +96,7 @@
     <name>Text Entry</name>
     <pv_name>AFG3052C:AO0:VOAM</pv_name>
     <x>10</x>
-    <y>350</y>
+    <y>305</y>
     <width>65</width>
     <precision>3</precision>
   </widget>
@@ -157,7 +104,7 @@
     <name>Combo Box_2</name>
     <pv_name>AFG3052C:AO0:VOUN</pv_name>
     <x>79</x>
-    <y>350</y>
+    <y>305</y>
     <width>71</width>
     <height>20</height>
   </widget>
@@ -165,8 +112,29 @@
     <name>Text Entry_1</name>
     <pv_name>AFG3052C:AO0:IMPD</pv_name>
     <x>55</x>
-    <y>220</y>
+    <y>175</y>
     <width>65</width>
     <precision>0</precision>
+  </widget>
+  <widget type="thumbwheel" version="2.0.0">
+    <name>Thumbwheel_1</name>
+    <pv_name>DLCpro:set:offset</pv_name>
+    <x>10</x>
+    <y>90</y>
+    <width>110</width>
+    <height>40</height>
+    <decimal_digits>3</decimal_digits>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>AFG 3052C</text>
+    <x>14</x>
+    <y>146</y>
+    <width>230</width>
+    <height>31</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
   </widget>
 </display>
