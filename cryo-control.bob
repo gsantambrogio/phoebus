@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-01 12:39:36 by ambrogio-->
+<!--Saved on 2024-05-24 15:47:27 by ambrogio-->
 <display version="2.0.0">
   <name>Display</name>
   <width>480</width>
@@ -18,6 +18,49 @@
     <color name="MAJOR" red="255" green="0" blue="0">
     </color>
   </grid_color>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>12</x>
+    <y>279</y>
+    <width>460</width>
+    <height>175</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_7</name>
+    <x>272</x>
+    <y>342</y>
+    <width>115</width>
+    <height>54</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="204" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>272</x>
+    <y>284</y>
+    <width>115</width>
+    <height>54</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="204" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_1</name>
     <x>12</x>
@@ -195,17 +238,6 @@
     <width>75</width>
     <off_label>Closed</off_label>
     <on_label>Open</on_label>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_2</name>
-    <x>12</x>
-    <y>279</y>
-    <width>460</width>
-    <height>175</height>
-    <background_color>
-      <color red="204" green="204" blue="204">
-      </color>
-    </background_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>temp label_10</name>
@@ -1072,76 +1104,6 @@
     <precision>3</precision>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>temp label_38</name>
-    <text>PID 1</text>
-    <x>320</x>
-    <y>283</y>
-    <width>51</width>
-    <font>
-      <font family="Liberation Sans" style="BOLD" size="16.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>temp label_39</name>
-    <text>input</text>
-    <x>276</x>
-    <y>305</y>
-    <width>30</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="BOLD" size="12.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Pressure_30</name>
-    <pv_name>CTC:PID1:inputCh</pv_name>
-    <x>312</x>
-    <y>303</y>
-    <width>65</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="18.0">
-      </font>
-    </font>
-    <format>1</format>
-    <precision>3</precision>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>temp label_40</name>
-    <text>SetP</text>
-    <x>276</x>
-    <y>329</y>
-    <width>35</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="BOLD" size="12.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_9</name>
-    <pv_name>CTC:OutputEnable</pv_name>
-    <x>339</x>
-    <y>371</y>
-    <width>84</width>
-    <height>20</height>
-    <off_label>OFF</off_label>
-    <on_label>ON</on_label>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="12.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_15</name>
-    <pv_name>CTC:PID1:setpoint</pv_name>
-    <x>312</x>
-    <y>327</y>
-    <width>65</width>
-    <precision>2</precision>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>temp label_41</name>
     <text>Heater1</text>
     <x>23</x>
@@ -1366,5 +1328,131 @@
     </font>
     <format>1</format>
     <precision>3</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_35</name>
+    <pv_name>CTC:PID2:inputCh</pv_name>
+    <x>313</x>
+    <y>347</y>
+    <width>65</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_20</name>
+    <pv_name>CTC:PID2:setpoint</pv_name>
+    <x>313</x>
+    <y>371</y>
+    <width>65</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_12</name>
+    <pv_name>CTC:OutputEnable</pv_name>
+    <x>396</x>
+    <y>331</y>
+    <width>57</width>
+    <height>18</height>
+    <off_label>OFF</off_label>
+    <on_label>ON</on_label>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_51</name>
+    <text>PID 2</text>
+    <x>399</x>
+    <y>371</y>
+    <width>51</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_38</name>
+    <text>PID 1</text>
+    <x>399</x>
+    <y>288</y>
+    <width>51</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_39</name>
+    <text>input</text>
+    <x>277</x>
+    <y>290</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_30</name>
+    <pv_name>CTC:PID1:inputCh</pv_name>
+    <x>313</x>
+    <y>288</y>
+    <width>65</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_40</name>
+    <text>SetP</text>
+    <x>277</x>
+    <y>314</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_15</name>
+    <pv_name>CTC:PID1:setpoint</pv_name>
+    <x>313</x>
+    <y>312</y>
+    <width>65</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_52</name>
+    <text>input</text>
+    <x>277</x>
+    <y>349</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_53</name>
+    <text>SetP</text>
+    <x>277</x>
+    <y>373</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
   </widget>
 </display>
