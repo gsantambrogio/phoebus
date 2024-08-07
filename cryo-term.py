@@ -33,6 +33,14 @@ def switch_vars(choice):
             val = 1-int(epics.caget('cryo:switch'))
             epics.caput('cryo:switch',val)
             return "Switched Cryo"
+        case 8:
+            val = 1-int(epics.caget('TDK1:Enable'))
+            epics.caput('TDK1:Enable',val)
+            return "Heater 1 switched"
+        case 9:
+            val = 1-int(epics.caget('TDK2:Enable'))
+            epics.caput('TDK2:Enable',val)
+            return "Heater 2 switched"
         case 0:
             return "Refreshing..."
         case _:
@@ -51,7 +59,10 @@ def get_vals():
                 ['','Temp 1','',epics.caget('CTC:Temp1')],
                 ['','Temp 2','',epics.caget('CTC:Temp2')],
                 ['','Temp 3','',epics.caget('CTC:Temp3')],
-                ['','Temp 4','',epics.caget('CTC:Temp4')]]
+                ['','Temp 4','',epics.caget('CTC:Temp4')],
+                [8,'Heater 1',epics.caget('TDK1:Enable'),''],
+                [9,'Heater 2',epics.caget('TDK2:Enable'),''],
+          ]
     return vals
 
 
