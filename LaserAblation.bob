@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-01-28 12:12:48 by ambrogio-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>390</width>
+  <height>220</height>
+  <actions>
+  </actions>
+  <rules>
+    <rule name="New Rule" prop_id="name" out_exp="false">
+      <exp bool_exp="$(PressureGauge:switch)">
+        <value>Display</value>
+      </exp>
+      <pv_name>$(PressureGauge:switch)</pv_name>
+    </rule>
+  </rules>
+  <grid_color>
+    <color name="MAJOR" red="255" green="0" blue="0">
+    </color>
+  </grid_color>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <width>390</width>
+    <height>220</height>
+    <background_color>
+      <color red="204" green="204" blue="204">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_1</name>
+    <pv_name>StpM:Temp</pv_name>
+    <x>295</x>
+    <y>9</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>0</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_1</name>
+    <text>Temp</text>
+    <x>242</x>
+    <y>9</y>
+    <width>74</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_2</name>
+    <text>Position</text>
+    <x>14</x>
+    <y>48</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_2</name>
+    <pv_name>StpM:Pos</pv_name>
+    <x>85</x>
+    <y>48</y>
+    <width>112</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>2</precision>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button</name>
+    <pv_name>StpM:Scan</pv_name>
+    <x>282</x>
+    <y>122</y>
+    <width>96</width>
+    <off_label>Scan</off_label>
+    <on_label>Scanning</on_label>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>5</x>
+    <y>37</y>
+    <width>380</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="380.5314382314795" y="1.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Pressure_24</name>
+    <pv_name>StpM:Moving</pv_name>
+    <x>85</x>
+    <y>83</y>
+    <width>112</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <format>6</format>
+    <precision>3</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_4</name>
+    <pv_name>StpM:MoveAbs</pv_name>
+    <x>282</x>
+    <y>43</y>
+    <width>96</width>
+    <height>30</height>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_5</name>
+    <pv_name>StpM:Max</pv_name>
+    <x>206</x>
+    <y>127</y>
+    <width>70</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_11</name>
+    <pv_name>StpM:Min</pv_name>
+    <x>95</x>
+    <y>127</y>
+    <width>70</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_4</name>
+    <text>Stepper Motor</text>
+    <x>12</x>
+    <y>7</y>
+    <width>141</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_2</name>
+    <x>710</x>
+    <y>550</y>
+    <width>0</width>
+    <height>0</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_7</name>
+    <text>Scan</text>
+    <x>14</x>
+    <y>127</y>
+    <width>74</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_55</name>
+    <text>Min:</text>
+    <x>62</x>
+    <y>129</y>
+    <width>33</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_57</name>
+    <text>Max:</text>
+    <x>173</x>
+    <y>129</y>
+    <width>36</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <pv_name>StpM:Stop</pv_name>
+    <text>Stop</text>
+    <x>225</x>
+    <y>78</y>
+    <width>153</width>
+    <background_color>
+      <color red="230" green="77" blue="77">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>5</x>
+    <y>158</y>
+    <width>380</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="380.53143823147957" y="1.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_58</name>
+    <text>Status</text>
+    <x>14</x>
+    <y>83</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_21</name>
+    <pv_name>StpM:Current</pv_name>
+    <x>82</x>
+    <y>163</y>
+    <width>80</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_23</name>
+    <pv_name>StpM:VMax</pv_name>
+    <x>83</x>
+    <y>186</y>
+    <width>80</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_24</name>
+    <pv_name>StpM:VStop</pv_name>
+    <x>251</x>
+    <y>186</y>
+    <width>80</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_25</name>
+    <pv_name>StpM:VStart</pv_name>
+    <x>251</x>
+    <y>163</y>
+    <width>80</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_59</name>
+    <text>Current</text>
+    <x>13</x>
+    <y>166</y>
+    <width>64</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_60</name>
+    <text>Max Vel</text>
+    <x>13</x>
+    <y>188</y>
+    <width>64</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_61</name>
+    <text>V Start</text>
+    <x>189</x>
+    <y>166</y>
+    <width>64</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_62</name>
+    <text>V Stop</text>
+    <x>189</x>
+    <y>188</y>
+    <width>64</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>temp label_63</name>
+    <text>Go To:</text>
+    <x>222</x>
+    <y>48</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>5</x>
+    <y>115</y>
+    <width>380</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="380.53143823147957" y="1.0">
+      </point>
+    </points>
+  </widget>
+</display>
