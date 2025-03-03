@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-14 13:27:52 by ambrogio-->
+<!--Saved on 2025-03-03 19:26:08 by ambrogio-->
 <display version="2.0.0">
   <name>Display</name>
   <width>550</width>
-  <height>340</height>
+  <height>580</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <text>Toptica scan:offset</text>
-    <x>14</x>
-    <y>16</y>
-    <width>230</width>
-    <height>31</height>
+    <text>Offset</text>
+    <x>170</x>
+    <y>6</y>
+    <width>69</width>
+    <height>19</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
@@ -18,9 +18,9 @@
   </widget>
   <widget type="scaledslider" version="2.0.0">
     <name>Scaled Slider</name>
-    <pv_name>DLCpro:set:offset</pv_name>
+    <pv_name>DLC1300:set:offset</pv_name>
     <x>10</x>
-    <y>50</y>
+    <y>28</y>
     <width>530</width>
     <major_tick_step_hint>10</major_tick_step_hint>
     <scale_format>#.###</scale_format>
@@ -46,7 +46,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_1</name>
-    <y>140</y>
+    <y>373</y>
     <width>550</width>
     <height>195</height>
     <background_color>
@@ -58,7 +58,7 @@
     <name>Label_2</name>
     <text>CH1</text>
     <x>10</x>
-    <y>175</y>
+    <y>408</y>
     <width>45</width>
     <height>25</height>
     <font>
@@ -70,7 +70,7 @@
     <name>Combo Box</name>
     <pv_name>AFG3052C:AO0:FMOD</pv_name>
     <x>10</x>
-    <y>200</y>
+    <y>433</y>
     <width>110</width>
     <height>20</height>
   </widget>
@@ -78,7 +78,7 @@
     <name>Combo Box_1</name>
     <pv_name>AFG3052C:AO0:FUSHP</pv_name>
     <x>10</x>
-    <y>225</y>
+    <y>458</y>
     <width>110</width>
     <height>20</height>
   </widget>
@@ -86,7 +86,7 @@
     <name>Thumbwheel</name>
     <pv_name>AFG3052C:AO0:FFIX</pv_name>
     <x>10</x>
-    <y>250</y>
+    <y>483</y>
     <width>140</width>
     <height>50</height>
     <decimal_digits>0</decimal_digits>
@@ -96,7 +96,7 @@
     <name>Text Entry</name>
     <pv_name>AFG3052C:AO0:VOAM</pv_name>
     <x>10</x>
-    <y>305</y>
+    <y>538</y>
     <width>65</width>
     <precision>3</precision>
   </widget>
@@ -104,7 +104,7 @@
     <name>Combo Box_2</name>
     <pv_name>AFG3052C:AO0:VOUN</pv_name>
     <x>79</x>
-    <y>305</y>
+    <y>538</y>
     <width>71</width>
     <height>20</height>
   </widget>
@@ -112,15 +112,15 @@
     <name>Text Entry_1</name>
     <pv_name>AFG3052C:AO0:IMPD</pv_name>
     <x>55</x>
-    <y>175</y>
+    <y>408</y>
     <width>65</width>
     <precision>0</precision>
   </widget>
   <widget type="thumbwheel" version="2.0.0">
     <name>Thumbwheel_1</name>
-    <pv_name>DLCpro:set:offset</pv_name>
+    <pv_name>DLC1300:set:offset</pv_name>
     <x>10</x>
-    <y>90</y>
+    <y>68</y>
     <width>110</width>
     <height>40</height>
     <decimal_digits>3</decimal_digits>
@@ -129,12 +129,220 @@
     <name>Label_1</name>
     <text>AFG 3052C</text>
     <x>14</x>
-    <y>146</y>
+    <y>379</y>
     <width>230</width>
     <height>31</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Toptica 1300 nm</text>
+    <x>10</x>
+    <y>6</y>
+    <width>150</width>
+    <height>19</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="179" green="26" blue="26">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>DLC1300:get:offset</pv_name>
+    <x>250</x>
+    <y>68</y>
+    <width>170</width>
+    <precision>10</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Offset</text>
+    <x>170</x>
+    <y>117</y>
+    <width>65</width>
+    <height>19</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>Scaled Slider_1</name>
+    <pv_name>DLCXA0:set:offset</pv_name>
+    <x>10</x>
+    <y>140</y>
+    <width>530</width>
+    <major_tick_step_hint>10</major_tick_step_hint>
+    <scale_format>#.###</scale_format>
+    <level_hihi>70.0</level_hihi>
+    <level_high>70.0</level_high>
+    <level_low>57.0</level_low>
+    <level_lolo>50.0</level_lolo>
+    <show_hihi>false</show_hihi>
+    <show_high>false</show_high>
+    <show_low>false</show_low>
+    <show_lolo>false</show_lolo>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <increment>0.001</increment>
+    <minimum>50.0</minimum>
+    <maximum>70.0</maximum>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="thumbwheel" version="2.0.0">
+    <name>Thumbwheel_2</name>
+    <pv_name>DLCXA0:set:offset</pv_name>
+    <x>10</x>
+    <y>180</y>
+    <width>110</width>
+    <height>40</height>
+    <decimal_digits>3</decimal_digits>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>XA v=0</text>
+    <x>10</x>
+    <y>117</y>
+    <width>65</width>
+    <height>19</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="179" green="26" blue="26">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_3</name>
+    <pv_name>DLCXA0:get:offset</pv_name>
+    <x>250</x>
+    <y>180</y>
+    <width>170</width>
+    <precision>10</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Offset</text>
+    <x>170</x>
+    <y>230</y>
+    <width>65</width>
+    <height>19</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>Scaled Slider_2</name>
+    <pv_name>DLCXA1:set:offset</pv_name>
+    <x>10</x>
+    <y>254</y>
+    <width>530</width>
+    <major_tick_step_hint>10</major_tick_step_hint>
+    <scale_format>#.###</scale_format>
+    <level_hihi>70.0</level_hihi>
+    <level_high>70.0</level_high>
+    <level_low>57.0</level_low>
+    <level_lolo>50.0</level_lolo>
+    <show_hihi>false</show_hihi>
+    <show_high>false</show_high>
+    <show_low>false</show_low>
+    <show_lolo>false</show_lolo>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <increment>0.001</increment>
+    <minimum>50.0</minimum>
+    <maximum>70.0</maximum>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="thumbwheel" version="2.0.0">
+    <name>Thumbwheel_3</name>
+    <pv_name>DLCXA1:set:offset</pv_name>
+    <x>10</x>
+    <y>294</y>
+    <width>110</width>
+    <height>40</height>
+    <decimal_digits>3</decimal_digits>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>XA v=1</text>
+    <x>10</x>
+    <y>230</y>
+    <height>19</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="179" green="26" blue="26">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_4</name>
+    <pv_name>DLCXA1:get:offset</pv_name>
+    <x>250</x>
+    <y>294</y>
+    <width>170</width>
+    <precision>10</precision>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>550</x>
+    <y>169</y>
+    <width>200</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>14</x>
+    <y>115</y>
+    <width>500</width>
+    <height>1</height>
+    <points>
+      <point x="500.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>14</x>
+    <y>227</y>
+    <width>500</width>
+    <height>1</height>
+    <points>
+      <point x="500.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
   </widget>
 </display>
